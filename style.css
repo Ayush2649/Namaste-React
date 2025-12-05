@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     border: 2px solid black;
+    padding: 0 20px;
 }
 
 .logo {
@@ -11,13 +12,15 @@
 
 .nav-items > ul {
     display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 20px;
 }
 
 .nav-items > ul > li {
     list-style-type: none;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
 }
 
@@ -41,9 +44,10 @@
 
 .filter {
   padding-top: 10px;
+  display: flex;
 }
 
-.filter-btn {
+.filter-btn, .search-btn, .search-box {
     margin: 10px;
     cursor: pointer;
     background-color: #f0f0f0;
@@ -51,6 +55,11 @@
     padding: 8px 16px;
     border-radius: 4px;
     font-weight: 700;
+}
+
+.search-btn:hover, .filter-btn:hover {
+    background-color: #f15928;
+    color: white;
 }
 
 .res-img {
@@ -91,5 +100,27 @@
   background-color: #e0e0e0;
   margin: 10px;
   border-radius: 8px;
+}
 
+.login-btn {
+  background-color: transparent;
+  color: #f15928;
+  border: 2px solid #f15928;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.login-btn:hover {
+  background-color: #f15928;
+  color: white;
+}
+
+.nav-login {
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
